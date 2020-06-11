@@ -1,10 +1,12 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/rs/videos" tag="button">Sebian</router-link>&nbsp; 
+      <router-link to="/en/videos" tag="button">English</router-link>
+      
     </div>
-    <router-view/>
+    <router-view :key="$route.fullPath"></router-view>
+    
   </div>
 </template>
 
